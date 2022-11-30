@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.FenFXML_ConfirmationInscriptionControleur">
+    <stylesheets>
+        <URL value="@fenfxml_confirmationinscription.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="26.0" prefHeight="42.0" prefWidth="600.0" text="Confirmation d'inscription" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="106.0" prefHeight="21.0" prefWidth="65.0" text="Nom : " />
+      <Label layoutX="14.0" layoutY="145.0" text="Session : " />
+      <Label layoutX="14.0" layoutY="190.0" text="Date : " />
+      <TextField id="txtNbInscrits" fx:id="txtNbInscrits" editable="false" layoutX="14.0" layoutY="223.0" prefHeight="31.0" prefWidth="35.0" />
+      <Label layoutX="57.0" layoutY="228.0" prefHeight="21.0" prefWidth="97.0" text="inscrit(s) pour" />
+      <Label layoutX="225.0" layoutY="228.0" text="places" />
+      <Button id="btnConfirm" fx:id="btnConfirm" layoutX="14.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleInscription" prefHeight="31.0" prefWidth="200.0" text="Confirmation" />
+      <Button id="btnAnnul" fx:id="btnAnnul" layoutX="311.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleAnnulation" prefHeight="31.0" prefWidth="200.0" text="Annuler" />
+      <TextField id="txtNom" fx:id="txtNom" editable="false" layoutX="95.0" layoutY="101.0" prefHeight="31.0" prefWidth="451.0" />
+      <TextField id="txtSession" fx:id="txtSession" editable="false" layoutX="95.0" layoutY="140.0" prefHeight="31.0" prefWidth="451.0" />
+      <TextField id="txtDate" fx:id="txtDate" editable="false" layoutX="94.0" layoutY="185.0" prefHeight="31.0" prefWidth="451.0" />
+      <TextField id="txtNbPlaces" fx:id="txtNbPlaces" editable="false" layoutX="179.0" layoutY="223.0" prefHeight="31.0" prefWidth="35.0" />
+   </children>
+</AnchorPane>

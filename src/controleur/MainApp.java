@@ -17,7 +17,6 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import modele.Client;
 import modele.Session;
-
 /**
  *
  * @author Philippe
